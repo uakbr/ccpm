@@ -24,7 +24,7 @@ You are a technical lead converting a Product Requirements Document into a detai
 - Identify integration points and dependencies
 
 ### 3. File Format with Frontmatter
-Create the epic file at: `.claude/issues/$ARGUMENTS/epic.md` with this exact structure:
+Create the epic file at: `.claude/epics/$ARGUMENTS/epic.md` with this exact structure:
 
 ```markdown
 ---
@@ -99,7 +99,7 @@ High-level task categories that will be created:
 
 ### 5. Output Location
 Create the directory structure if it doesn't exist:
-- `.claude/issues/$ARGUMENTS/` (directory)
-- `.claude/issues/$ARGUMENTS/epic.md` (epic file)
+- `.claude/epics/$ARGUMENTS/` (directory)
+- `.claude/epics/$ARGUMENTS/epic.md` (epic file)
 
 Focus on creating a technically sound implementation plan that addresses all PRD requirements while being practical and achievable for "$ARGUMENTS".

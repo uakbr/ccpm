@@ -12,7 +12,7 @@ Display epic and its tasks with current status.
 You are displaying comprehensive information about an epic and its tasks for: **$ARGUMENTS**
 
 ### 1. Load Epic Data
-- Read epic from `.claude/issues/$ARGUMENTS/epic.md`
+- Read epic from `.claude/epics/$ARGUMENTS/epic.md`
 - Parse epic frontmatter for metadata
 - Scan for all task files in the same directory
 - Parse frontmatter from each task file

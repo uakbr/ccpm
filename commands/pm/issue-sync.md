@@ -13,7 +13,7 @@ You are synchronizing local development progress to GitHub as issue comments for
 
 ### 1. Gather Local Updates
 Collect all local updates for the issue:
-- Read from `.claude/issues/{epic_name}/updates/$ARGUMENTS/`
+- Read from `.claude/epics/{epic_name}/updates/$ARGUMENTS/`
 - Check for new content in:
   - `progress.md` - Development progress
   - `notes.md` - Technical notes and decisions

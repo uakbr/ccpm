@@ -18,7 +18,7 @@ You are initiating work on a specific GitHub issue with proper setup and agent c
 
 ### 2. Find Local Task File
 - Search for local task file with GitHub URL matching issue #$ARGUMENTS
-- Look in all epic directories under `.claude/issues/`
+- Look in all epic directories under `.claude/epics/`
 - Extract task details and epic context
 
 ### 3. Update Task File Frontmatter
@@ -36,7 +36,7 @@ github: https://github.com/{org}/{repo}/issues/$ARGUMENTS
 ### 4. Local Workspace Setup
 Create/verify local working environment:
 ```
-.claude/issues/{epic_name}/
+.claude/epics/{epic_name}/
 ├── epic.md
 ├── {task_number}.md              # Task file for this issue
 └── updates/
@@ -157,8 +157,8 @@ Check and prepare:
    Assignee: {username}
    
 📁 Local workspace:
-   Task file: .claude/issues/{epic_name}/{task_file}
-   Updates: .claude/issues/{epic_name}/updates/$ARGUMENTS/
+   Task file: .claude/epics/{epic_name}/{task_file}
+   Updates: .claude/epics/{epic_name}/updates/$ARGUMENTS/
    
 🤖 Agent configured: {agent_type}
    

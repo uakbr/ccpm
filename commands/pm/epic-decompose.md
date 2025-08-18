@@ -12,7 +12,7 @@ Break epic into concrete, actionable tasks.
 You are decomposing an epic into specific, actionable tasks for: **$ARGUMENTS**
 
 ### 1. Read the Epic
-- Load the epic from `.claude/issues/$ARGUMENTS/epic.md`
+- Load the epic from `.claude/epics/$ARGUMENTS/epic.md`
 - Understand the technical approach and requirements
 - Review the task breakdown preview
 
@@ -61,7 +61,7 @@ Clear, concise description of what needs to be done
 ```
 
 ### 3. Task Naming Convention
-Save tasks as: `.claude/issues/$ARGUMENTS/{task_number}.md`
+Save tasks as: `.claude/epics/$ARGUMENTS/{task_number}.md`
 - Use sequential numbering: 001.md, 002.md, etc.
 - Keep task titles short but descriptive
 

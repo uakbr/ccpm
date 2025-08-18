@@ -12,7 +12,7 @@ Decompose epic into tasks and sync to GitHub in one operation.
 You are performing a complete epic decomposition and GitHub sync in a single operation for: **$ARGUMENTS**
 
 ### 1. Prerequisites Check
-- Verify epic exists at `.claude/issues/$ARGUMENTS/epic.md`
+- Verify epic exists at `.claude/epics/$ARGUMENTS/epic.md`
 - Ensure `gh` CLI is available and authenticated
 - Confirm git repository with GitHub remote
 

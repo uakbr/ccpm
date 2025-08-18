@@ -12,10 +12,10 @@ Show the next issue to work on with its relation to the epic.
 You are identifying the next priority issue to work on and showing its context within the epic structure.
 
 ### 1. Scan All Local Epics
-- Read the `.claude/issues/` directory
+- Read the `.claude/epics/` directory
 - Find all epic directories with `epic.md` files
 - Parse epic frontmatter for status and progress
-- Look for associated task files and parse their frontmatter
+- Look for associated task files and their statuses
 
 ### 2. Analyze Task Status from Frontmatter
 For each epic, examine task frontmatter to determine:
@@ -58,7 +58,7 @@ Show the recommended next issue using frontmatter data:
    ⏸️ {pending_dependency}
    
 📊 Task Details:
-   File: .claude/issues/{epic_name}/{task_file}
+   File: .claude/epics/{epic_name}/{task_file}
    Parallel execution: {parallel_flag}
    GitHub: {github_url}
    

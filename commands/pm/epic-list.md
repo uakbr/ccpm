@@ -12,7 +12,7 @@ List all existing epics in the project.
 You are listing all epics in the project.
 
 ### 1. Scan Epic Directories
-- Read the `.claude/issues/` directory
+- Read the `.claude/epics/` directory
 - Look for subdirectories containing `epic.md` files
 - Parse frontmatter from each epic file to extract metadata
 - Count task files in each epic directory
@@ -21,7 +21,7 @@ You are listing all epics in the project.
 For each epic found, display using frontmatter data:
 ```
 📚 {name} ({status}) - {progress}%
-   Path: .claude/issues/{epic_name}/
+   Path: .claude/epics/{epic_name}/
    Created: {created}
    Progress: {progress}% ({completed_tasks}/{total_tasks} tasks)
    PRD: {prd_path}

@@ -46,7 +46,6 @@ The `/pm:next` command provides intelligent recommendations by:
 - **Providing alternatives** when multiple good options exist
 
 Example output:
-
 ```
 🎯 Next Recommended Issue
 
@@ -63,7 +62,7 @@ Example output:
 ```
 .claude/
 ├── prds/              # Product requirement documents
-├── issues/            # Local issue workspace (add to .gitignore)
+├── epics/             # Local epic workspace (add to .gitignore)
 │   ├── [epic-name]/   # Epic and related tasks
 │   │   ├── epic.md    # Implementation plan
 │   │   ├── [#].md     # Individual task files  
@@ -90,7 +89,7 @@ Example output:
 
 1. Copy these command files to `.claude/commands/pm/`
 2. Create `.claude/prds/` and `.claude/context/` directories
-3. Add `.claude/issues/` to `.gitignore`
+3. Add `.claude/epics/` to `.gitignore`
 4. Ensure GitHub CLI is authenticated: `gh auth status`
 
 ## Quick Start

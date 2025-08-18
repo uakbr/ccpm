@@ -13,7 +13,7 @@ You are displaying comprehensive information about a GitHub issue and related su
 
 ### 1. Fetch Issue Data
 - Use `gh issue view #$ARGUMENTS` to get GitHub issue details
-- Look for local task file if it exists
+- Look for local task file if it exists by searching `.claude/epics/` directories
 - Check for related issues and sub-tasks
 
 ### 2. Issue Overview
@@ -34,8 +34,8 @@ Display issue header:
 If local task file exists:
 ```
 📁 Local Files:
-   Task file: .claude/issues/{epic_name}/{task_file}
-   Updates: .claude/issues/{epic_name}/updates/$ARGUMENTS/
+   Task file: .claude/epics/{epic_name}/{task_file}
+   Updates: .claude/epics/{epic_name}/updates/$ARGUMENTS/
    Last local update: {timestamp}
 ```
 

@@ -17,14 +17,14 @@ You are synchronizing local epic and tasks to GitHub Issues for: **$ARGUMENTS**
 - Verify epic and task files exist locally for "$ARGUMENTS"
 
 ### 2. Create Epic Issue
-- Read the epic from `.claude/issues/$ARGUMENTS/epic.md`
+- Read the epic from `.claude/epics/$ARGUMENTS/epic.md`
 - Create GitHub issue with:
   - Title: `Epic: $ARGUMENTS`
   - Body: Full epic content (excluding frontmatter)
   - Labels: `epic`, `epic:$ARGUMENTS`
 
 ### 3. Create Task Issues
-For each task file in `.claude/issues/$ARGUMENTS/`:
+For each task file in `.claude/epics/$ARGUMENTS/`:
 - Read task content
 - Create GitHub issue with:
   - Title: `{Task Title}` (from frontmatter name field)
@@ -39,20 +39,20 @@ Use these commands for issue creation:
 # Create epic issue
 gh issue create \
   --title "Epic: $ARGUMENTS" \
-  --body-file ".claude/issues/$ARGUMENTS/epic.md" \
+  --body-file ".claude/epics/$ARGUMENTS/epic.md" \
   --label "epic,epic:$ARGUMENTS"
 
 # Create task issue
 gh issue create \
   --title "{Task Title}" \
-  --body-file ".claude/issues/$ARGUMENTS/{task_file}" \
+  --body-file ".claude/epics/$ARGUMENTS/{task_file}" \
   --label "task,epic:$ARGUMENTS"
 ```
 
 ### 5. Update Local Files with GitHub URLs
 After creating issues, update frontmatter in local files:
 
-**Epic file** (`.claude/issues/$ARGUMENTS/epic.md`):
+**Epic file** (`.claude/epics/$ARGUMENTS/epic.md`):
 ```yaml
 ---
 name: $ARGUMENTS
@@ -64,7 +64,7 @@ github: https://github.com/{org}/{repo}/issues/{epic_number}
 ---
 ```
 
-**Task files** (`.claude/issues/$ARGUMENTS/{task}.md`):
+**Task files** (`.claude/epics/$ARGUMENTS/{task}.md`):
 ```yaml
 ---
 name: [Task Title]
@@ -76,7 +76,7 @@ github: https://github.com/{org}/{repo}/issues/{task_number}
 ```
 
 ### 6. Create GitHub Mapping File
-Create mapping file: `.claude/issues/$ARGUMENTS/github-mapping.md`
+Create mapping file: `.claude/epics/$ARGUMENTS/github-mapping.md`
 ```markdown
 # GitHub Issue Mapping for $ARGUMENTS
 
