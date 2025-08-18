@@ -20,7 +20,7 @@ No "vibe coding" - every line of code traces back to a specification.
 ├── CLAUDE.md          # Always-on instructions & repo metadata
 ├── context/           # Project-wide context files
 ├── prds/              # Product requirement documents
-├── issues/            # ← PM's local issue workspace (in .gitignore)
+├── epics/             # ← PM's local workspace (place in .gitignore)
 │   ├── [epic-name]/   # Epic and related tasks
 │   │   ├── epic.md    # Implementation plan
 │   │   ├── [#].md     # Individual task files
@@ -48,7 +48,7 @@ Output: `.claude/prds/feature-name.md`
 ```
 Transforms the PRD into a technical implementation plan (epic). This includes architectural decisions, technical approach, task breakdown, and dependency mapping.
 
-Output: `.claude/issues/feature-name/epic.md`
+Output: `.claude/epics/feature-name/epic.md`
 
 ### 3. Task Decomposition Phase
 
@@ -57,7 +57,7 @@ Output: `.claude/issues/feature-name/epic.md`
 ```
 Breaks down the epic into concrete, actionable tasks. Each task includes acceptance criteria, estimated effort, and parallelization flags.
 
-Output: `.claude/issues/feature-name/[task].md` files
+Output: `.claude/epics/feature-name/[task].md` files
 
 ### 4. GitHub Synchronization
 
@@ -78,7 +78,7 @@ Decomposes and syncs in a single operation.
 ```bash
 /pm:issue-start 1234
 ```
-Fetches issue details from GitHub (if needed), creates local working copy, and launches a specialized agent to implement the task. The agent maintains progress updates throughout development.
+Fetches issue details from GitHub (if needed), creates a local working copy, and launches a specialized agent to implement the task. The agent maintains progress updates throughout development.
 
 ```bash
 /pm:issue-sync 1234
@@ -111,7 +111,7 @@ Pushes local updates as GitHub issue comments, creating a transparent audit trai
 ## Key Features
 
 ### Context Preservation
-- Each epic maintains its own context in `.claude/issues/[epic-name]/`
+- Each epic maintains its own context in `.claude/epics/[epic-name]/`
 - Agents can read full project context from `.claude/context/`
 - Updates are tracked locally before GitHub sync
 
@@ -121,10 +121,10 @@ Pushes local updates as GitHub issue comments, creating a transparent audit trai
 - Each agent maintains its own update log
 
 ### GitHub Integration
-- Issues are the source of truth for task state
+- Issues are the source of truth for the task state
 - Comments provide development history
 - No dependency on GitHub Projects - works with plain issues
-- Projects can be added as optional visualization layer
+- Projects can be added as an optional visualization layer
 
 ### Agent Specialization
 - Different agents for different domains (UI, API, database)
@@ -183,7 +183,7 @@ Pushes local updates as GitHub issue comments, creating a transparent audit trai
 ## Setup
 
 1. Create `.claude/` directory structure in your repository
-2. Add `.claude/issues/` to `.gitignore`
+2. Add `.claude/epics/` to `.gitignore`
 3. Ensure `gh` CLI is installed and authenticated
 4. Copy command definitions to `.claude/commands/pm/`
 5. Create `.claude/CLAUDE.md` with repository information
