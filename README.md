@@ -106,12 +106,6 @@ graph LR
     B --> C[Task Decomposition]
     C --> D[GitHub Sync]
     D --> E[Parallel Execution]
-
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e9
-    style D fill:#fff3e0
-    style E fill:#fce4ec
 ```
 
 ### See It In Action (60 seconds)
