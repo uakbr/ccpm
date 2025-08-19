@@ -17,7 +17,7 @@ Each agent is assigned a work stream from the issue analysis:
 Stream A: Database Layer
   Files: src/db/*, migrations/*
   Agent: backend-specialist
-  
+
 Stream B: API Layer
   Files: src/api/*
   Agent: api-specialist
@@ -146,7 +146,7 @@ fi
 Agents should update their status regularly:
 ```bash
 # Update progress file every significant step
-echo "✓ Completed: Database schema" >> stream-A.md
+echo "✅ Completed: Database schema" >> stream-A.md
 git add stream-A.md
 git commit -m "Progress: Stream A - schema complete"
 ```
