@@ -199,6 +199,7 @@ Specialized agents implement tasks while maintaining progress updates and an aud
 ## Command Reference
 
 > **Quick Help**: Type `/pm:help` for a concise command summary
+> **Initial Setup**: Run `/pm:init` to install dependencies and configure GitHub
 
 ### PRD Commands
 - `/pm:prd-new` - Launch brainstorming for new product requirement
@@ -389,25 +390,24 @@ Teams using this system report:
 
    > If you already have a `.claude` directory, clone this repository to a different directory and copy the contents of the cloned `.claude` directory to your project's `.claude` directory.
 
-2. **Add to `.gitignore`**:
-   ```
-   .claude/epics/
-   ```
-   > This directory is intended for the local workspace. It is not intended to be pushed to GitHub.
-
-3. **Install prerequisites**:
+2. **Initialize the PM system**:
    ```bash
-   # Ensure gh CLI is installed and authenticated
-   gh auth status
+   /pm:init
    ```
+   This command will:
+   - Install GitHub CLI (if needed)
+   - Authenticate with GitHub
+   - Install [gh-sub-issue extension](https://github.com/yahsan2/gh-sub-issue) for proper parent-child relationships
+   - Create required directories
+   - Update .gitignore
 
-4. **Create `CLAUDE.md`** with your repository information
+3. **Create `CLAUDE.md`** with your repository information
    ```bash
    /init include rules from .claude/CLAUDE.md
    ```
    > If you already have a `CLAUDE.md` file, run: `/re-init` to update it with important rules from `.claude/CLAUDE.md`.
 
-5. **Prime the system**:
+4. **Prime the system**:
    ```bash
    /context:create
    ```
@@ -433,12 +433,24 @@ Watch as structured planning transforms into shipped code.
 | Status Updates | ✓ | ✓ (sync) |
 | Final Deliverables | | ✓ |
 
-## Notes
+## Technical Notes
 
+### GitHub Integration
+- Uses **gh-sub-issue extension** for proper parent-child relationships
+- Falls back to task lists if extension not installed
+- Epic issues track sub-task completion automatically
+- Labels provide additional organization (`epic:feature`, `task:feature`)
+
+### File Naming Convention
+- Tasks start as `001.md`, `002.md` during decomposition
+- After GitHub sync, renamed to `{issue-id}.md` (e.g., `1234.md`)
+- Makes it easy to navigate: issue #1234 = file `1234.md`
+
+### Design Decisions
 - Intentionally avoids GitHub Projects API complexity
-- Issues use labels for organization (e.g., `epic:feature`, `task:feature`)
 - All commands operate on local files first for speed
 - Synchronization with GitHub is explicit and controlled
+- Worktrees provide clean git isolation for parallel work
 - GitHub Projects can be added separately for visualization
 
 ---
