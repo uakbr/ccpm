@@ -192,8 +192,11 @@ Specialized agents implement tasks while maintaining progress updates and an aud
 
 ## Command Reference
 
-> **Quick Help**: Type `/pm:help` for a concise command summary
-> **Initial Setup**: Run `/pm:init` to install dependencies and configure GitHub
+> [!TIP]
+> Type `/pm:help` for a concise command summary
+
+### Initial Setup
+- `/pm:init` - Install dependencies and configure GitHub
 
 ### PRD Commands
 - `/pm:prd-new` - Launch brainstorming for new product requirement
