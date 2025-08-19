@@ -198,6 +198,8 @@ Specialized agents implement tasks while maintaining progress updates and an aud
 
 ## Command Reference
 
+> **Quick Help**: Type `/pm:help` for a concise command summary
+
 ### PRD Commands
 - `/pm:prd-new` - Launch brainstorming for new product requirement
 - `/pm:prd-parse` - Convert PRD to implementation epic
