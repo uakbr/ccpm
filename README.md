@@ -457,13 +457,16 @@ Watch as structured planning transforms into shipped code.
 
 ## Support This Project
 
+Claude Code PM was developed at [Automaze](https://automaze.io) **for developers who ship, by developers who ship**.
+
 If Claude Code PM helps your team ship better software:
 
 - ⭐ **[Star this repository](https://github.com/your-username/claude-code-pm)** to show your support
 - 🐦 **[Follow @aroussi on X](https://x.com/aroussi)** for updates and tips
 
+
 ---
 
-*Stop managing chaos. Start shipping excellence.*
-
-**Built for developers who ship. By developers who ship.**
+> [!TIP]
+> **Ship faster with Automaze.** We partner with founders to bring their vision to life, scale their business, and optimize for success.
+> **[Visit Automaze to book a call with me ›](https://automaze.io)**
