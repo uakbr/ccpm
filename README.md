@@ -386,7 +386,6 @@ Teams using this system report:
    ```bash
    cd path/to/your/project/
    git clone https://github.com/automazeio/ccpm.git .
-   cd ccpm/
    ```
 
    > If you already have a `.claude` directory, clone this repository to a different directory and copy the contents of the cloned `.claude` directory to your project's `.claude` directory.
