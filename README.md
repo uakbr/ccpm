@@ -15,11 +15,11 @@ Stop losing context. Stop blocking on tasks. Stop shipping bugs. This battle-tes
 
 ## Table of Contents
 
-- [Why This Matters](#why-this-matters)
+- [Background](#background)
+- [The Workflow](#the-workflow)
 - [What Makes This Different?](#what-makes-this-different)
-- [Why GitHub Issues as the Database?](#why-github-issues-as-the-database)
-- [Core Philosophy: No Vibe Coding](#core-philosophy-no-vibe-coding)
-- [The Complete Workflow](#the-complete-workflow)
+- [Why GitHub Issues?](#why-github-issues)
+- [Core Principle: No Vibe Coding](#core-principle-no-vibe-coding)
 - [System Architecture](#system-architecture)
 - [Workflow Phases](#workflow-phases)
 - [Command Reference](#command-reference)
@@ -29,10 +29,10 @@ Stop losing context. Stop blocking on tasks. Stop shipping bugs. This battle-tes
 - [Example Flow](#example-flow)
 - [Get Started Now](#get-started-now)
 - [Local vs Remote](#local-vs-remote)
-- [Notes](#notes)
+- [Technical Notes](#technical-notes)
 - [Support This Project](#support-this-project)
 
-## Why This Matters
+## Background
 
 Every team struggles with the same problems:
 - **Context evaporates** between sessions, forcing constant re-discovery
@@ -41,6 +41,30 @@ Every team struggles with the same problems:
 - **Progress becomes invisible** until the very end
 
 This system solves all of that.
+
+## The Workflow
+
+```mermaid
+graph LR
+    A[PRD Creation] --> B[Epic Planning]
+    B --> C[Task Decomposition]
+    C --> D[GitHub Sync]
+    D --> E[Parallel Execution]
+```
+
+### See It In Action (60 seconds)
+
+```bash
+# Create a comprehensive PRD through guided brainstorming
+/pm:prd-new memory-system
+
+# Transform PRD into a technical epic with task breakdown
+/pm:prd-parse memory-system
+
+# Push to GitHub and start parallel execution
+/pm:epic-oneshot memory-system
+/pm:issue-start 1235
+```
 
 ## What Makes This Different?
 
@@ -52,7 +76,7 @@ This system solves all of that.
 | Progress hidden in branches | **Transparent audit trail** in GitHub |
 | Manual task coordination | **Intelligent prioritization** with `/pm:next` |
 
-## Why GitHub Issues as the Database?
+## Why GitHub Issues?
 
 Most Claude Code workflows operate in isolation – a single developer working with AI in their local environment. This creates a fundamental problem: **AI-assisted development becomes a silo**.
 
@@ -84,7 +108,7 @@ By using GitHub Issues as our database, we unlock something powerful:
 
 This isn't just a project management system – it's a **collaboration protocol** that lets humans and AI agents work together at scale, using infrastructure your team already trusts.
 
-## Core Philosophy: No Vibe Coding
+## Core Principle: No Vibe Coding
 
 > **Every line of code must trace back to a specification.**
 
@@ -97,30 +121,6 @@ We follow a strict 5-phase discipline:
 5. **📊 Track** - Maintain transparent progress at every step
 
 No shortcuts. No assumptions. No regrets.
-
-## The Complete Workflow
-
-```mermaid
-graph LR
-    A[PRD Creation] --> B[Epic Planning]
-    B --> C[Task Decomposition]
-    C --> D[GitHub Sync]
-    D --> E[Parallel Execution]
-```
-
-### See It In Action (60 seconds)
-
-```bash
-# Create a comprehensive PRD through guided brainstorming
-/pm:prd-new memory-system
-
-# Transform PRD into a technical epic with task breakdown
-/pm:prd-parse memory-system
-
-# Push to GitHub and start parallel execution
-/pm:epic-oneshot memory-system
-/pm:issue-start 1235
-```
 
 ## System Architecture
 
