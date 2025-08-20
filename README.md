@@ -1,13 +1,16 @@
 # Claude Code PM
 
-**Claude Code workflow to ship ~~faster~~ better using a spec-driven development, GitHub issues, and parallel AI agents.**
-
-[![GitHub Issues](https://img.shields.io/badge/Powered%20by-GitHub%20Issues-28a745)](https://github.com/ranaroussi/ccpm)
-[![Spec Driven](https://img.shields.io/badge/Philosophy-Spec%20Driven-blue)](https://github.com/ranaroussi/ccpm/blob/main/README.md)
-[![MIT License](https://img.shields.io/badge/License-MIT-orange)](https://github.com/ranaroussi/ccpm/blob/main/LICENSE)
+[![Claude Code](https://img.shields.io/badge/+-Claude%20Code-d97757)](https://github.com/ranaroussi/ccpm/blob/main/README.md)
 &nbsp;
-[![Follow on 𝕏](https://img.shields.io/badge/𝕏-@aroussi-black)](http://x.com/intent/follow?screen_name=aroussi)
-[![Star this repo](https://img.shields.io/badge/★-Star%20this%20repo-yellow)](https://github.com/ranaroussi/ccpm)
+[![GitHub Issues](https://img.shields.io/badge/+-GitHub%20Issues-1f2328)](https://github.com/ranaroussi/ccpm)
+&nbsp;
+[![MIT License](https://img.shields.io/badge/License-MIT-28a745)](https://github.com/ranaroussi/ccpm/blob/main/LICENSE)
+&nbsp;
+[![Follow on 𝕏](https://img.shields.io/badge/𝕏-@aroussi-1c9bf0)](http://x.com/intent/follow?screen_name=aroussi)
+&nbsp;
+[![Star this repo](https://img.shields.io/badge/★-Star%20this%20repo-e7b10b)](https://github.com/ranaroussi/ccpm)
+
+### Claude Code workflow to ship ~~faster~~ _better_ using spec-driven development, GitHub issues, and mutiple AI agents running in parallel.
 
 Stop losing context. Stop blocking on tasks. Stop shipping bugs. This battle-tested system turns PRDs into epics, epics into GitHub issues, and issues into production code – with full traceability at every step.
 
