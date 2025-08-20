@@ -14,7 +14,7 @@ echo "┌───────────────────────�
 echo "│ Claude Code Project Management  │"
 echo "│ by https://x.com/aroussi        │"
 echo "└─────────────────────────────────┘"
-echo "https://github.com/ranaroussi/ccpm"
+echo "https://github.com/automazeio/ccpm"
 echo ""
 echo ""
 
