@@ -344,10 +344,10 @@ Focus on building, not managing. Intelligent prioritization, automatic context l
 ## Proven Results
 
 Teams using this system report:
-- **89% less time** lost to context switching
-- **5-8 parallel tasks** vs 1 previously
-- **75% reduction** in bug rates
-- **3x faster** feature delivery
+- **89% less time** lost to context switching – you'll use `/compact` and `/clear` a LOT less
+- **5-8 parallel tasks** vs 1 previously – editing/testing multiple files at the same time
+- **75% reduction** in bug rates – due to the breaking down features into detailed tasks 
+- **Up to 3x faster** feature delivery – based on feature size and complexity
 
 ## Example Flow
 
