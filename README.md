@@ -1,8 +1,6 @@
 # Claude Code PM
 
-> The Context-Preserving Project Management System
-
-**Transform chaos into shipped features with spec-driven development and parallel AI agents.**
+**Claude Code workflow to ship ~~faster~~ better using a spec-driven development, GitHub issues, and parallel AI agents.**
 
 [![GitHub Issues](https://img.shields.io/badge/Powered%20by-GitHub%20Issues-28a745)](https://github.com/ranaroussi/ccpm)
 [![Spec Driven](https://img.shields.io/badge/Philosophy-Spec%20Driven-blue)](https://github.com/ranaroussi/ccpm/blob/main/README.md)
@@ -12,6 +10,8 @@
 [![Star this repo](https://img.shields.io/badge/★-Star%20this%20repo-yellow)](https://github.com/ranaroussi/ccpm)
 
 Stop losing context. Stop blocking on tasks. Stop shipping bugs. This battle-tested system turns PRDs into epics, epics into GitHub issues, and issues into production code – with full traceability at every step.
+
+![Claude Code PM](screenshot.webp)
 
 ## Table of Contents
 
