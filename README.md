@@ -387,8 +387,7 @@ Teams using this system report:
    cd path/to/your/project/
    git clone https://github.com/automazeio/ccpm.git .
    ```
-
-   > If you already have a `.claude` directory, clone this repository to a different directory and copy the contents of the cloned `.claude` directory to your project's `.claude` directory.
+   > ⚠️ **IMPORTANT**: If you already have a `.claude` directory, clone this repository to a different directory and copy the contents of the cloned `.claude` directory to your project's `.claude` directory.
 
 2. **Initialize the PM system**:
    ```bash
