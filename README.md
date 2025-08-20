@@ -1,14 +1,14 @@
 # Claude Code PM
 
-[![Claude Code](https://img.shields.io/badge/+-Claude%20Code-d97757)](https://github.com/ranaroussi/ccpm/blob/main/README.md)
+[![Claude Code](https://img.shields.io/badge/+-Claude%20Code-d97757)](https://github.com/automazeio/ccpm/blob/main/README.md)
 &nbsp;
-[![GitHub Issues](https://img.shields.io/badge/+-GitHub%20Issues-1f2328)](https://github.com/ranaroussi/ccpm)
+[![GitHub Issues](https://img.shields.io/badge/+-GitHub%20Issues-1f2328)](https://github.com/automazeio/ccpm)
 &nbsp;
-[![MIT License](https://img.shields.io/badge/License-MIT-28a745)](https://github.com/ranaroussi/ccpm/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-28a745)](https://github.com/automazeio/ccpm/blob/main/LICENSE)
 &nbsp;
 [![Follow on 𝕏](https://img.shields.io/badge/𝕏-@aroussi-1c9bf0)](http://x.com/intent/follow?screen_name=aroussi)
 &nbsp;
-[![Star this repo](https://img.shields.io/badge/★-Star%20this%20repo-e7b10b)](https://github.com/ranaroussi/ccpm)
+[![Star this repo](https://img.shields.io/badge/★-Star%20this%20repo-e7b10b)](https://github.com/automazeio/ccpm)
 
 ### Claude Code workflow to ship ~~faster~~ _better_ using spec-driven development, GitHub issues, and mutiple AI agents running in parallel.
 
@@ -384,7 +384,7 @@ Teams using this system report:
 1. **Clone this repository into your project**:
    ```bash
    cd path/to/your/project/
-   git clone https://github.com/ranaroussi/ccpm.git .
+   git clone https://github.com/automazeio/ccpm.git .
    cd ccpm/
    ```
 
