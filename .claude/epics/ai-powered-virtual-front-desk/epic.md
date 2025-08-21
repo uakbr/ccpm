@@ -4,7 +4,7 @@ status: backlog
 created: 2025-08-21T09:56:43Z
 progress: 0%
 prd: .claude/prds/ai-powered-virtual-front-desk.md
-github: [Will be updated when synced to GitHub]
+github: https://github.com/uakbr/ccpm/issues/1
 ---
 
 # Epic: AI-Powered Virtual Front Desk
